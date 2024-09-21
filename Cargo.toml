@@ -1,0 +1,9 @@
+[package]
+edition = "2021"
+name = "css-bundler"
+version = "0.0.0"
+
+[dependencies]
+anstream = "0.6.15"                                  # Used by clap.
+anstyle = "1.0.8"                                    # Used by clap.
+clap = { version = "4.5.18", features = ["derive"] }
