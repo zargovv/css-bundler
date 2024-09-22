@@ -1,4 +1,4 @@
-### Styling
+## Styling
 
 #### Linting rules are defined in the `main.rs`.
 
