@@ -33,12 +33,11 @@ is restricted to 100 characters to ensure optimal readability across diverse mac
 - **The ordering of the imports** is straightforward. The standard library is the first item to be
   imported, followed by any modules (external or internal), and then project namespaces (`crate`,
   `super`, `self`).
-- **Namespace ordering** is also a factor in determining the precedence. In the standard library, the
-  namespace `core` is placed before `std`, given that `std` is dependent on `core.` In the project
-  itself, the namespace `crate` represents the highest level of organization and therefore precedes
-  other elements. Following `crate`, the `super` namespace is used for elements of a superior level
-  of organization, and then the `self` namespace is used for elements specific to the current
-  context.
+- **Namespace ordering** is also a factor in determining the precedence. In the standard library,
+  the namespace `core` is placed before `std`, given that `std` is dependent on `core.` In the
+  project itself, the namespace `crate` represents the highest level of organization and thus
+  precedes all others. Following `crate`, the `super` namespace, which represents a superior level
+  of organization, and then the `self` namespace.
 
 The illustration of the rules above:
 
