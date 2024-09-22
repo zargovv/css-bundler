@@ -1,3 +1,12 @@
+#![warn(
+  clippy::pedantic,
+  clippy::unwrap_used,
+  clippy::expect_used,
+  clippy::indexing_slicing,
+  clippy::panic
+)]
+#![allow(clippy::module_name_repetitions)]
+
 mod log;
 mod unstable;
 
