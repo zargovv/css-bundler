@@ -13,7 +13,7 @@ still in the process of being defined and discovered.
 
 #### Max line width
 
-is restricted to 100 characters to ensure optimal readability across diverse machines
+is restricted to 100 characters to ensure optimal readability across diverse machines.
 
 #### This project employs a two-space indentation for several reasons:
 
@@ -74,7 +74,7 @@ use submodule::{some_fn};
 
 use crate::{uppermost_level_import};
 use super::{super_import};
-use self::{submodule}; // Not required, as `submodule` is allowed to be imported directly.
+use self::{submodule};
 ```
 
 #### Exports
