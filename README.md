@@ -25,7 +25,7 @@ is restricted to 100 characters to ensure optimal readability across diverse mac
 
 - **Imports are placed subsequently to the submodules** (keyword `mod`), and not prior to.
   - It is of the utmost importance to distinguish between imports and the module system. Therefore,
-    it is essential to place them in the appropriate locations and to avoid any mixing.
+    it is essential to place them in the appropriate locations to avoid any mixing.
 - It is important to note that when importing, the `core` and `std` **namespaces** must not be
   separated by any spacing. Furthermore, any **modules** that have not been qualified by a parent
   **namespace** (such as `core`, `std`, `crate`, `super`, or `self`) must be imported in the same
@@ -33,7 +33,7 @@ is restricted to 100 characters to ensure optimal readability across diverse mac
 - **The ordering of the imports** is straightforward. The standard library is the first item to be
   imported, followed by any modules (external or internal), and then project namespaces (`crate`,
   `super`, `self`).
-- Namespace ordering is also a factor in determining the precedence. In the standard library, the
+- **Namespace ordering** is also a factor in determining the precedence. In the standard library, the
   namespace `core` is placed before `std`, given that `std` is dependent on `core.` In the project
   itself, the namespace `crate` represents the highest level of organization and therefore precedes
   other elements. Following `crate`, the `super` namespace is used for elements of a superior level
