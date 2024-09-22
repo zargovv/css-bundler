@@ -1,3 +1,5 @@
+// This file contains unstable APIs from the Rust standard library, which are subject to change.
+
 use std::ptr;
 
 /// Moves all but the first of consecutive elements to the end of the slice satisfying
