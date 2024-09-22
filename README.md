@@ -38,6 +38,7 @@ is restricted to 100 characters to ensure optimal readability across diverse mac
   project itself, the namespace `crate` represents the highest level of organization and thus
   precedes all others. Following `crate`, the `super` namespace, which represents a superior level
   of organization, and then the `self` namespace.
+- The uppermost namespace **should never duplicate**.
 
 The illustration of the rules above:
 
@@ -46,7 +47,8 @@ mod submodule;
 mod other_submodule;
 // -- SPACING --
 use core::{core_module, other_core_module};
-use std::{std_module, other_std_module};
+use std::{std_module::std_func, other_std_module};
+use std::std_module; // Not allowed.
 // -- SPACING --
 use external_dependency::{external_module};
 use submodule::{some_fn};
